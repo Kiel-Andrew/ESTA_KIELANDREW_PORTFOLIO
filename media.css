@@ -1,8 +1,17 @@
 @media screen and (max-width: 1400px) {
+  .leftcolumn, .rightcolumn{
+    width: 100%;
+    padding: 0;
+  }
 
 }
 
 @media screen and (max-width: 1200px) {
+  .leftcolumn, .rightcolumn{
+    width: 100%;
+    padding: 0;
+  }
+
   #desktop-nav {
     display: none;
   }
