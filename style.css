@@ -9,25 +9,14 @@ html{
     scroll-behavior: smooth;
 }
 
-
-header {
-    margin-left: 20%;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-}
-
 body{
-    background-color:rgb(248, 248, 248); 
+    width: 100%;
+    height: 100vh;
 }
 
 footer {
     background-color: black;
     padding: 15px 10px;
-}
-
-h1{
-
 }
 
 h2{
@@ -44,7 +33,6 @@ h5{
     color: white;
     font-size: 14px;
     font-family: Courier New, Monaco;
-    margin: 0;
     line-height: 1.2;
 }
 
@@ -54,23 +42,76 @@ hr{
     border: none;
 }
 
+.logo{
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.logo span{
+    color: rgb(255, 110, 0);
+    text-shadow:0 0 2px orange;
+}
+
+.logo:hover{
+    cursor: pointer;
+    scale: 1.3;
+    filter: drop-shadow(0 0 10px rgb(255, 110, 0));
+}
+
+.typewriter{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 600;
+}
+
+.typewriter-text{
+    color: rgb(255, 110, 0);
+    text-shadow: 0 0 3px rgb(255, 110, 0);
+}
 
 /*Navigation*/
+.nav-container{
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .topnav a{
-    color: black;
+    color: white;
     padding: 20px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.medianav a{
-    color: white;
-    padding: 20px;
+.topnav a:hover{
+    color: rgb(255, 110, 0);
+    text-decoration:underline;
 }
 
-.topnav a:hover, .medianav a:hover{
-    color: burlywood;
+.medianav a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 0.2rem solid rgb(255, 110, 0);
+    border-radius: 50%;
+    color: rgb(255, 110, 0);
+    margin: 5px 15px;
+    font-size: 1rem;
+    transition: 0.2s linear;
+}
+
+.medianav a:hover{
+    scale: 1.3;
+    color: black;
+    background-color: rgb(255, 110, 0);
+    filter: drop-shadow(0 0 10px rgb(255, 110, 0));
 }
 
 /*Position*/
@@ -80,7 +121,6 @@ hr{
 }
 
 .rightcolumn{
-    text-align-last: center;
     float: right;
     width: 50%;
     padding-left: 20px;
@@ -99,16 +139,23 @@ hr{
     text-align: center;
     position: absolute;
     padding: 10px;
-    border-style: groove;
     cursor: pointer;
+    border-color: rgb(255, 110, 0);
+    transition: 0.2s linear;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
 }
 
 .btn:hover{
-    background-color:darkgray;
+    background-color:rgb(255, 110, 0);
+    scale: 1.1;
 }
 
 /*Borders*/
 .border-a{
+    margin: 5px 15px;
     padding: 10px;
     display: inline-block;
     border-style: groove;
@@ -122,15 +169,55 @@ hr{
     color: white;
 }
 
+.border-a:hover{
+    scale: 1.1;
+}
+
+/*Animate*/
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    
+    50%{
+        scale: 1.05;
+    }
+    
+    100%{
+        scale: 1;
+    }
+}
+
+
 #profile{
-    background-image: radial-gradient(circle 700px at 75% 50%, rgb(75, 75, 75), black);
+    height: 85%;
+    background-color:black;
     color: white;
     padding: 50px;
+    line-height: 1.5;
+}
+
+#profile img{
+    text-align: center;
+}
+
+#profile h1{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 600;
 }
 
 #about-me{
+    height: 100%;
     padding: 50px;
     text-align:justify;
+}
+
+#about-me p{
+    font-family: 'Arial Narrow';
+    font-weight: 500;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 2;
 }
 
 #skills{
