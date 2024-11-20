@@ -1,8 +1,8 @@
 /*General Style*/
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*border: red solid 1px;*/
   }
 
 html{
@@ -13,8 +13,7 @@ html{
 header {
     text-align: center;
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 body{
@@ -31,11 +30,12 @@ h1{
 }
 
 h2{
-
+    text-align: center;
 }
 
 h3{
-
+    font-family:;
+    font-size: 18px;
 }
 
 h5{
@@ -64,6 +64,7 @@ hr{
 }
 
 .medianav a{
+    float: right;
     color: white;
     padding: 20px;
 }
@@ -82,7 +83,8 @@ hr{
 }
 
 .rightcolumn{
-    float: left;
+    float: right;
+    text-align: center;
     width: 50%;
     padding-left: 20px;
 }
@@ -94,8 +96,13 @@ hr{
 }
 
 #profile{
-    background-image: linear-gradient(to right, burlywood, rgb(255, 255, 255)) ;
+    background-color: grey;
     color: white;
+    padding: 50px;
+}
+
+#about-me{
+    padding: 20px;
 }
 
 #skills{
