@@ -41,7 +41,7 @@ If you want to run this project locally, follow the steps below:
 ### Steps to Run Locally
 
 #### 1. Clone this repository:
-- git clone https://github.com/Kiel-Andrew/portfolio.git
+- git clone [https://github.com/Kiel-Andrew/portfolio.git](https://github.com/Kiel-Andrew/ESTA_KIELANDREW_PORTFOLIO.git)
 #### 2. Open the Folder
 - cd portfolio
 #### 3. Open index.html in your browser:
