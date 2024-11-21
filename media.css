@@ -120,6 +120,12 @@
         margin-bottom: 20px;
     }
 
+    #profile .leftcolumn{
+        max-width: fit-content;
+        align-items: center; 
+        justify-content: center;
+    }
+
     .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0;
@@ -146,6 +152,12 @@
     .btn {
         display: block;
         margin: 20px auto;
+    }
+
+    .download-btn {
+        align-items: center;
+        font-size: 0.9rem;
+        padding: 10px 22px;
     }
 
     /*About section*/
@@ -300,6 +312,14 @@
     .btn {
         font-size: 0.9rem;
         padding: 8px;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+        margin-top: 8px;
+        margin: 0 auto;
+        display: block; 
     }
 
     /*about section*/
