@@ -21,7 +21,7 @@ This is the personal portfolio of **Kiel Andrew Esta**, a UI/UX designer and asp
 
 ## Live Demo
 
-You can check out the live version of the portfolio at: [[Kiel Andrew Esta Portfolio]([https://kiel-andrew.github.io](https://kiel-andrew.github.io/ESTA_KIELANDREW_PORTFOLIO/))]
+You can check out the live version of the portfolio at: [[Kiel Andrew Esta Portfolio](https://kiel-andrew.github.io](https://kiel-andrew.github.io/ESTA_KIELANDREW_PORTFOLIO/))]
 
 ## Social Links
 
