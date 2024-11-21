@@ -267,7 +267,7 @@
     }
 }
 
-@media (max-width:440px){
+@media (max-width:400px){
     #profile .row {
         display: flex;
         flex-direction: column;
@@ -294,7 +294,6 @@
     }
 
     .medianav a {
-        margin-left: 8px;
         font-size: 0.9rem;
     }
 
