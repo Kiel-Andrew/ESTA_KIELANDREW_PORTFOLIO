@@ -41,10 +41,9 @@ If you want to run this project locally, follow the steps below:
 ### Steps to Run Locally
 
 #### 1. Clone this repository:
-   git clone https://github.com/Kiel-Andrew/portfolio.git
-   Open the folder:
+- git clone https://github.com/Kiel-Andrew/portfolio.git
 #### 2. Open the Folder
-  cd portfolio
+- cd portfolio
 #### 3. Open index.html in your browser:
-  open index.html
+- open index.html
 ##### 4. Enjoy the portfolio locally!
