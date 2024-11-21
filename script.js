@@ -45,16 +45,16 @@ function eraseText(){
 window.onload = typeWriter
 
 
+
+//Contacts
 function openContactForm() {
     document.getElementById("contact-modal").style.display = "block";
 }
 
-// Close Contact Form
 function closeContactForm() {
     document.getElementById("contact-modal").style.display = "none";
 }
 
-// Close the Modal When Clicking Outside
 window.onclick = function (event) {
     const modal = document.getElementById("contact-modal");
     if (event.target === modal) {

@@ -1,18 +1,367 @@
+@media (max-width:1200px){
+    #profile h1 {
+        font-size: clamp(1.5rem, 1rem + 3vw, 2rem);
+    }
+    
+    #profile .rightcolumn img {
+        max-width: 80%;
+    }
+
+    #about-me {
+        padding: 30px;
+    }
+
+    #about-me .leftcolumn img {
+        max-width: 100%;
+    }
+
+    #about-me h2 {
+        font-size: 2rem;
+    }
+
+    #about-me .row {
+        gap: 15px;
+    }
+
+    #about-me .leftcolumn img {
+        max-width: 70%;
+    }
+
+    #about-me .rightcolumn {
+        padding: 15px;
+    }
+
+    #about-me .rightcolumn p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    #skills p {
+        font-size: 1rem;
+    }
+
+    .skill-container {
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 220px;
+    }
+
+    .skill-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /*Projects*/
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 250px;
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
 
 @media (max-width:884px) {
-  nav .logo{
-      position: absolute;
-      top: 16px;
-      left: 15px;
-      font-size: 1.5rem;
-  }
+    nav .logo{
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
 
-  .nav-container .links{
-      display: none;
-  }
+    .nav-container .links{
+        display: none;
+    }
 
-  .hamburg,
-  .cancel{
-      display: block;
-  }
+    .hamburg,.cancel{
+        z-index: 1;
+        display: block;
+    }
+
+    /*Profile*/
+    #profile{
+        height: auto;
+    }
+
+    #profile .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile .rightcolumn {
+        order: -1;
+        max-width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    #profile h1, #profile h3 {
+        text-align: center;
+    }
+
+    .typewriter {
+        text-align: center;
+    }
+
+    .medianav {
+        justify-content: center;
+    }
+
+    .medianav a {
+        margin: 10px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 20px auto;
+    }
+
+    /*About section*/
+    #about-me {
+        height: auto;
+        padding: 20px;
+    }
+
+    #about-me .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-me .leftcolumn img {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #about-me .rightcolumn {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #about-me .rightcolumn p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+
+
+    #about-me .about-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    #about-me .btn {
+        text-decoration: none;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    /*Skills section*/
+
+    #skills{
+        height: auto;
+    }
+
+    #skills h2 {
+        font-size: 1.8rem;
+    }
+
+    #skills p {
+        font-size: 0.9rem;
+    }
+
+    .skill-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .skill-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-level {
+        height: 8px;
+    }
+
+    /*Projects*/
+    #projects {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    #profile img {
+        order: -1;
+        max-width: 60%;
+        margin-bottom: 20px;
+    }
+
+    #projects h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .card h4 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+
+    .card .btn {
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:440px){
+    #profile .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile .rightcolumn{
+        order: -1;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #profile h1 {
+        font-size: 1.5rem;
+    }
+
+    .typewriter {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .rightcolumn img {
+        max-width: 80%;
+    }
+
+    .medianav a {
+        margin-left: 8px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /*about section*/
+    #about-me h2 {
+        font-size: 1.5rem;
+    }
+
+    #about-me .row {
+        gap: 10px;
+    }
+
+    #about-me .leftcolumn img {
+        max-width: 70%;
+    }
+
+    #about-me .rightcolumn p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    #about-me .btn {
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    /*Skills*/
+
+    #skills h2 {
+        font-size: 1.5rem;
+    }
+
+    #skills p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    .skill-container {
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+
+    .skill-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .skill-card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill-level {
+        height: 6px;
+    }
+
+    .skill-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .skill-card p {
+        font-size: 0.8rem;
+    }
 }
