@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Kiel Andrew Esta Portfolio</title>
+        <meta name="description" content="Portfolio of Kiel Andrew Esta - A passionate UI/UX designer and developer with expertise in programming and creativity.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="media.css">
         <link rel="stylesheet" href="style.css">
@@ -11,18 +12,32 @@
     </head>
 
     <body>
-        <div class="nav-container">
-            <div class="logo">
-                Kiel<span> Andrew</span>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    Kiel<span> Andrew</span>
+                </div>
+                <div class="topnav">
+                    <a href="#about-me">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-section">Contacts</a>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
             </div>
-            <div class="topnav">
-                <a href="#about-me">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contacts</a>
+
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#about-me">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-section">Contacts</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
             </div>
-        </div>
+        </nav>
         <div id="profile">
             <div class="row">
                 <div class="leftcolumn">
@@ -41,33 +56,40 @@
                             <a href="https://www.linkedin.com/in/kiel-andrew-esta-323b0432b/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </div>
                         <br>
-                        <button class="btn">Download CV</button>
+                        <button class="btn a">Download CV</button>
                     </div>
                 </div>
 
                 <div class="rightcolumn">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
+                    <img src="./Assets/profile.png" alt="Profile Picture" width="380" height="auto">
                 </div>
             </div>
         </div>
 
         <div id="about-me">
             <h2>About Me</h2>
-            <br>
             <div class="row">
+                <div class="leftcolumn">
+                    <img src="./Assets/Aboutme.png" alt="About Me Picture">
+                </div>
                 <div class="rightcolumn">
-                    <p>This is Kiel Andrew C. Esta, studying Bachelor of Science in Information System at Technological University of the Philippines.
-                        I want to do UI/UX design for systems because I like designing and challenging myself for doing it in programming.
-                        I like giving ideas as well as learning ideas from others.
+                    <p>
+                        <strong>Hello!</strong> My name is <span>Kiel Andrew C. Esta</span>. I’m currently pursuing 
+                        <em>Bachelor of Science in Information Systems</em> at the Technological University of the Philippines. 
+                        I have a passion for <span>UI/UX design</span>, blending creativity and programming to create engaging user experiences.
                     </p>
-                    <br>
-                    <p>In projects, I want to be a UI/UX designer and be competitive to show how better our project will be.
-                        Although, this is a role I sometimes receive and as a person who still lack imaginations , it is still great to ask
-                        my teams about their thoughts and what should be included to make and satisfy the stakeholders/clients.
+                    <p>
+                        I enjoy collaborating with teams, sharing ideas, and learning from others. My goal is to grow as a 
+                        <span>UI/UX designer</span> and create projects that not only meet but exceed stakeholder expectations. 
+                        I'm always striving to improve my imagination and design skills.
                     </p>
-                    <br>
-                    <p>I am exposing myself as well to other programming languages in order to fully develop my skills as a developer and a designer of the team.
+                    <p>
+                        Beyond design, I'm also exploring new programming languages to strengthen my skills as both a developer and a designer.
+                        This well-rounded approach helps me contribute effectively to my team's success.
                     </p>
+                    <div class="about-buttons">
+                        <a href="https://kiel-andrew.github.io/Blog/" target="_blank"><button class="btn">Learn More</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,107 +97,199 @@
         <div id="skills">
             <h2>Skills</h2>
             <br>
-            <div>
-                <p>Programming Language</p>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
-                    <hr>
+            <p>Programming Language</p>
+            <br>
+            <div class="skill-container">
+                <div class="skill-card">
+                    <img src="./Assets/C.png" width="200" height="200" alt="C programming language logo">
                     <p>C</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
+                    <p>Intermediate</p>
+                    <div class="skill-level">
+                        <span style="width: 60%;"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./Assets/C++.png" width="200" height="200" alt="C++ programming language logo">
                     <p>C++</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
+                    <p>Intermediate</p>
+                    <div class="skill-level">
+                        <span style="width: 60%;"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./Assets/Java.png" width="200" height="200" alt="Java programming language logo">
                     <p>Java</p>
-                    <p class="border-b">Beginner</p>
+                    <hr>
+                    <p>Intermediate</p>
+                    <div class="skill-level">
+                        <span style="width: 45%;"></span>
+                    </div>
                 </div>
             </div>
             <br>
-            <div>
-                <p>Integrated Development Environment (IDE)</p>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
-                    <hr>
+            <p>Integrated Development Environment (IDE)</p>
+            <br>
+            <div class="skill-container">
+                <div class="skill-card">
+                    <img src="./Assets/CodeBlocks.png" width="200" height="200" alt="Code Blocks IDE">
                     <p>Code Blocks</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
+                    <p>Advanced</p>
+                    <div class="skill-level">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./Assets/Netbeans.png" width="200" height="200" alt="Netbeans IDE">
                     <p>Apache NetBeans</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
+                    <p>Intermediate</p>
+                    <div class="skill-level">
+                        <span style="width: 50%;"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./Assets/vscode.png" width="200" height="200" alt="Visual Studio Code IDE">
                     <p>Visual Studio Code</p>
-                    <p class="border-b">Beginner</p>
+                    <hr>
+                    <p>Advanced</p>
+                    <div class="skill-level">
+                        <span style="width: 80%;"></span>
+                    </div>
                 </div>
             </div>
             <br>
-            <div>
-                <p>Others</p>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
-                    <hr>
+            <p>Others</p>
+            <br>
+            <div class="skill-container">
+                <div class="skill-card">
+                    <img src="./Assets/sql.png" width="200" height="200">
                     <p>MySQLWorkbench</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
-                    <p>Cisco Pocket Tracer</p>
-                    <p class="border-b">Beginner</p>
+                    <p>Beginner</p>
+                    <div class="skill-level">
+                        <span style="width: 30%;"></span>
+                    </div>
                 </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
-                    <hr>
+                <div class="skill-card">
+                    <img src="./Assets/figma.png" width="200" height="200">
                     <p>Figma</p>
-                    <p class="border-b">Beginner</p>
-                </div>
-                <div class="border-a">
-                    <img src="./Assets/ESTA_FORMAL_PICTURE.jpg" width="200" height="200">
                     <hr>
+                    <p>Advanced</p>
+                    <div class="skill-level">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./Assets/FlutterFlow.jpeg" width="200" height="200">
                     <p>FlutterFlow</p>
-                    <p class="border-b">Beginner</p>
+                    <hr>
+                    <p>Intermediate</p>
+                    <div class="skill-level">
+                        <span style="width: 60%;"></span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="experience">
             <h2>Experience</h2>
+        
+            <div class="timeline">
+                <!-- 2022 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="year">2022</p>
+                        <h3>Card Game</h3>
+                        <p>C/C++</p>
+                        <h3>Encryption & Decryption</h3>
+                        <p>C++</p>
+                        <h3>Library Management System</h3>
+                        <p>C++</p>
+                    </div>
+                </div>
+        
+                <!-- 2023 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="year">2023</p>
+                        <h3>Student Record Program</h3>
+                        <p>Java</p>
+                        <h3>Prototype App Development</h3>
+                        <p>Figma</p>
+                    </div>
+                </div>
+        
+                <!-- 2024 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="year">2024</p>
+                        <h3>UI/UX E-Tire Inventory System</h3>
+                        <p>FlutterFlow</p>
+                        <h3>Blog</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
 
         <div id="projects">
-            <h2>Projects</h2>
-
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <div class="card">
+                    <h4>Lucky 9 Card Game</h4>
+                    <p>A card game used to play locally with a specific set of rules and a consequence of truth or dare for players who lose.</p>
+                    <hr>
+                    <a href="https://github.com/Kiel-Andrew/Luck-9-Card-Game.git" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h4>Encryption & Decryption</h4>
+                    <p>This project is used to encrypt plain text messages into binaries and decrypt them back. It protects data for security purposes.</p>
+                    <hr>
+                    <a href="https://github.com/Ishkihu/BinaryEncryption-Decryption.git" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h4>COS Student Record Program</h4>
+                    <p>The project is used to maintain student information within the College of Science building. Restricted to admins and teachers to ensure data privacy.</p>
+                    <hr>
+                    <a href="https://github.com/Kiel-Andrew/COS-Student-Record-Program.git" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="leftcolumn">
-            <div id="contacts">
-                <h2>Contacts</h2>
-                <form>
-                    <fieldset>
-                        <legend>Contact Me</legend>
-                        <label>First Name:</label>
-                        <br><input type="text" name="First Name">
-                        <br><label>Last Name:</label>
-                        <br><input type="text" name="Last Name">
-                        <br><label>Email:</label>
-                        <br><input type="email" name="email">
-                        <br><label>Message:</label>
-                        <br><textarea placeholder="Message" name="message" rows="5" cols="100"></textarea>
-                        <br><input type="submit" value="Submit">
-                    </fieldset>
-                </form>
+        <div id="contact-section">
+            <div class="contact-content">
+                <h1>Get in Touch</h1>
+                <p>
+                    Have a question or want to work together? Feel free to drop me a message.  
+                    I am always excited to collaborate on new and exciting projects or discuss opportunities.
+                </p>
+                <button class="btn" onclick="openContactForm()">Contact Me</button>
             </div>
+        </div>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeContactForm()">&times;</span>
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="First Name" placeholder="Enter your first name" required>
+        
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="Last Name" placeholder="Enter your last name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+        
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
         <script>

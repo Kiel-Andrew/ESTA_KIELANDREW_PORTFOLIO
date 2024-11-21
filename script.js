@@ -1,3 +1,13 @@
+function hamburg(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(0px)"
+}
+
+function cancel(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(-500px)"
+}
+
 const texts = [
     "DEVELOPER",
     "UI/UX DESIGNER"
@@ -33,3 +43,21 @@ function eraseText(){
 }
 
 window.onload = typeWriter
+
+
+function openContactForm() {
+    document.getElementById("contact-modal").style.display = "block";
+}
+
+// Close Contact Form
+function closeContactForm() {
+    document.getElementById("contact-modal").style.display = "none";
+}
+
+// Close the Modal When Clicking Outside
+window.onclick = function (event) {
+    const modal = document.getElementById("contact-modal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
