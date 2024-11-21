@@ -1,124 +1,18 @@
-/* For larger screens, between 1400px and 1200px */
-@media screen and (max-width: 1400px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+
+@media (max-width:884px) {
+  nav .logo{
+      position: absolute;
+      top: 16px;
+      left: 15px;
+      font-size: 1.5rem;
   }
 
-  .topnav a {
-    padding: 10px;
-    font-size: 16px;
-  }
-}
-
-/* For medium screens, between 1200px and 800px */
-@media screen and (max-width: 1200px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
+  .nav-container .links{
+      display: none;
   }
 
-  .nav-container {
-    flex-direction: column;
-    height: auto;
-    align-items: flex-start;
-  }
-
-  .topnav a {
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  /* Adjust the project cards for medium screens */
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* For smaller screens, such as tablets and phones (max-width: 600px) */
-@media screen and (max-width: 600px) {
-  /* Header */
-  h1, h2 {
-    font-size: 1.8rem;
-  }
-
-  h3, h5 {
-    font-size: 1rem;
-  }
-
-  .hamburger {
-    display: block;
-}
-
-.topnav {
-    display: none;
-    flex-direction: column;
-    background-color: #f9f9f9;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 1000;
-}
-
-.topnav a {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-.topnav.show {
-    display: flex;
-}
-  .topnav a {
-    padding: 15px;
-    font-size: 14px;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  #profile img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #about-me .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #about-me .leftcolumn img {
-    width: 70%;
-  }
-
-  .skill-container {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline-item {
-    width: 100%;
-  }
-
-  .project-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #contact-section h1 {
-    font-size: 2rem;
-  }
-
-  #contact-section .contact-content {
-    padding: 10px;
-  }
-
-  .modal-content {
-    width: 90%;
-    padding: 15px;
+  .hamburg,
+  .cancel{
+      display: block;
   }
 }
