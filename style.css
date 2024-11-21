@@ -85,8 +85,8 @@ nav{
 .hamburg, .cancel{
     cursor: pointer;
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: 30px;
+    top: 30px;
     color: white;
     display: none;
     font-size: clamp(1.5rem, 0.5rem + 4vw, 2rem);
